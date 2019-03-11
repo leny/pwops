@@ -1,6 +1,6 @@
 {
   "name": "pwops",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "CSS-in-JS, from JS - the easy way",
   "keywords": [
     "css-in-js",
@@ -67,6 +67,7 @@
     "prettier": "^1.10.2"
   },
   "dependencies": {
-    "camelcase": "^5.2.0"
+    "camelcase": "^5.2.0",
+    "lodash.frompairs": "^4.0.1"
   }
 }
