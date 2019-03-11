@@ -1,0 +1,51 @@
+{
+  "name": "pwops",
+  "version":"0.0.1",
+  "description":"CSS-in-JS, from JS - the easy way",
+  "keywords": [
+    "css-in-js",
+    "styled-components",
+    "emotion",
+    "glamor",
+    "inline-styles",
+    "react"
+  ],
+  "author": {
+    "name": "leny",
+    "email": "info@flatland.be",
+    "url": "https://leny.me"
+  },
+  "homepage":"https://github.com/leny/pwops",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leny/pwops.git"
+  },
+  "files": [
+    "lib"
+  ],
+  "bugs": {
+    "url": "https://github.com/leny/pwopw/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/leny/pwops/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npx babel src --out-dir lib",
+    "lint":"npx eslint --fix --cache src"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "assert": "^1.4.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "mocha": "^6.0.2",
+    "prettier": "^1.10.2"
+  }
+}
