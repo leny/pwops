@@ -7,7 +7,9 @@
  */
 
 const units = require("./units");
+const pwop = require("./pwop");
 
 module.exports = {
     ...units,
+    ...pwop,
 };
