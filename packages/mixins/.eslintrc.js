@@ -1,6 +1,6 @@
 /* leny/pwops
  *
- * /index.js - ESLint shared configuration
+ * /.eslintrc.js - ESLint shared configuration
  *
  * coded by leny
  * started at 11/03/2019
