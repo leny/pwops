@@ -12,6 +12,7 @@ const ERROR = 2;
 module.exports = {
     env: {
         browser: true,
+        mocha: true,
         node: true,
         es6: true,
     },
@@ -48,7 +49,11 @@ module.exports = {
         "no-empty-character-class": ERROR,
         "no-ex-assign": ERROR,
         "no-extra-boolean-cast": ERROR,
-        "no-extra-parens": [ERROR, "all", {ignoreJSX: "multi-line"}],
+        "no-extra-parens": [
+            ERROR,
+            "all",
+            {ignoreJSX: "multi-line", enforceForArrowConditionals: false},
+        ],
         "no-extra-semi": ERROR,
         "no-func-assign": ERROR,
         "no-inner-declarations": ERROR,
@@ -156,7 +161,7 @@ module.exports = {
         "constructor-super": ERROR,
         "generator-star-spacing": ERROR,
         "no-class-assign": ERROR,
-        "no-confusing-arrow": [ ERROR, {"allowParens": true} ],
+        "no-confusing-arrow": [ERROR, {allowParens: true}],
         "no-const-assign": ERROR,
         "no-dupe-class-members": ERROR,
         "no-duplicate-imports": ERROR,
