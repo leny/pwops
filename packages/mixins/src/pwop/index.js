@@ -17,7 +17,12 @@ const pwop = obj => {
         let [prop, value] = entry;
 
         if (mixins[prop]) {
-            entries.push(...Object.entries(mixins[prop](value)));
+            entries.push(
+                ...Object.entries(
+                    // eslint-disable-next-line no-extra-parens
+                    mixins[prop](...(Array.isArray(value) ? value : [value])),
+                ),
+            );
             return;
         }
 

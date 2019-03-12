@@ -8,62 +8,46 @@
 
 const fromEntries = require("lodash.frompairs");
 
-const position = type => value => {
-    if (!Array.isArray(value)) {
-        if (value == null || value === "") {
-            return {
-                position: type,
-            };
-        }
-
-        return {
-            position: type,
-            top: value,
-            right: value,
-            bottom: value,
-            left: value,
-        };
-    }
-
+const position = type => (...values) => {
     let entries = {};
 
-    switch (value.length) {
+    switch (values.length) {
         case 0:
             return {position: type};
         case 1:
             entries = {
                 position: type,
-                top: value[0],
-                right: value[0],
-                bottom: value[0],
-                left: value[0],
+                top: values[0],
+                right: values[0],
+                bottom: values[0],
+                left: values[0],
             };
             break;
         case 2:
             entries = {
                 position: type,
-                top: value[0],
-                right: value[1],
-                bottom: value[0],
-                left: value[1],
+                top: values[0],
+                right: values[1],
+                bottom: values[0],
+                left: values[1],
             };
             break;
         case 3:
             entries = {
                 position: type,
-                top: value[0],
-                right: value[1],
-                bottom: value[2],
-                left: value[1],
+                top: values[0],
+                right: values[1],
+                bottom: values[2],
+                left: values[1],
             };
             break;
         case 4:
             entries = {
                 position: type,
-                top: value[0],
-                right: value[1],
-                bottom: value[2],
-                left: value[3],
+                top: values[0],
+                right: values[1],
+                bottom: values[2],
+                left: values[3],
             };
             break;
         default:
