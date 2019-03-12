@@ -10,7 +10,7 @@ const fromEntries = require("lodash.frompairs");
 const {properties} = require("../data");
 const mixins = require("../mixins");
 
-exports.pwop = obj => {
+const pwop = obj => {
     const entries = [];
 
     Object.entries(obj).forEach(entry => {
@@ -40,3 +40,7 @@ exports.pwop = obj => {
 
     return fromEntries(entries);
 };
+
+exports.pwops = pwop;
+exports.pwop = pwop;
+exports.pwp = pwop;
