@@ -105,6 +105,35 @@ const cases = {
             },
         ],
     ],
+    "Mixins:size": [
+        [
+            pwop({
+                size: rem(12),
+            }),
+            {
+                width: "12rem",
+                height: "12rem",
+            },
+        ],
+        [
+            pwop({
+                minSize: [rem(12), rem(6)],
+            }),
+            {
+                minWidth: "12rem",
+                minHeight: "6rem",
+            },
+        ],
+        [
+            pwop({
+                maxSize: [],
+            }),
+            {
+                maxWidth: 0,
+                maxHeight: 0,
+            },
+        ],
+    ],
 };
 
 describe("pwop()", () => {

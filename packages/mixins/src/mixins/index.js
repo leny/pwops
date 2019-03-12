@@ -7,7 +7,9 @@
  */
 
 const position = require("./position");
+const size = require("./size");
 
 module.exports = {
     ...position,
+    ...size,
 };
