@@ -76,6 +76,14 @@ const cases = {
         ],
         [
             pwop({
+                fixed: [],
+            }),
+            {
+                position: "fixed",
+            },
+        ],
+        [
+            pwop({
                 relative: [0],
             }),
             {
@@ -101,9 +109,10 @@ const cases = {
 
 describe("pwop()", () => {
     Object.entries(cases).forEach(([name, tests]) => {
-        it(name, () => {
-            tests.forEach(([result, expected]) =>
-                assert.deepEqual(result, expected),
+        describe(name, () => {
+            tests.forEach(([result, expected], index) =>
+                it(`${name}: case ${index + 1}`, () =>
+                    assert.deepEqual(result, expected)),
             );
         });
     });
