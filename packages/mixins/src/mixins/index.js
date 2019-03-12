@@ -8,8 +8,10 @@
 
 const position = require("./position");
 const size = require("./size");
+const flex = require("./flex");
 
 module.exports = {
     ...position,
     ...size,
+    ...flex,
 };
