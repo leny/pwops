@@ -39,6 +39,64 @@ const cases = {
             {transition: "color 1s, margin-right 2s ease-out"},
         ],
     ],
+    "Mixins:position": [
+        [
+            pwop({
+                absolute: [0, "auto", rem(3.6)],
+            }),
+            {
+                position: "absolute",
+                top: 0,
+                right: "auto",
+                bottom: "3.6rem",
+                left: "auto",
+            },
+        ],
+        [
+            pwop({
+                static: [0, null, rem(3.6), "auto"],
+            }),
+            {
+                position: "static",
+                top: 0,
+                bottom: "3.6rem",
+                left: "auto",
+            },
+        ],
+        [
+            pwop({
+                static: [0, false, rem(3.6), "auto"],
+            }),
+            {
+                position: "static",
+                top: 0,
+                bottom: "3.6rem",
+                left: "auto",
+            },
+        ],
+        [
+            pwop({
+                relative: [0],
+            }),
+            {
+                position: "relative",
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0,
+            },
+        ],
+        [
+            pwop({sticky: rem(3.6)}),
+            {
+                position: "sticky",
+                top: "3.6rem",
+                right: "3.6rem",
+                bottom: "3.6rem",
+                left: "3.6rem",
+            },
+        ],
+    ],
 };
 
 describe("pwop()", () => {
