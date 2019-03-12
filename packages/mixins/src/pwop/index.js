@@ -8,6 +8,7 @@
 
 const fromEntries = require("lodash.frompairs");
 const {properties} = require("../data");
+const mixins = require("../mixins");
 
 exports.pwop = obj => {
     const entries = [];
@@ -15,7 +16,10 @@ exports.pwop = obj => {
     Object.entries(obj).forEach(entry => {
         let [prop, value] = entry;
 
-        // TODO: check for mixins
+        if (mixins[prop]) {
+            entries.push(...Object.entries(mixins[prop](value)));
+            return;
+        }
 
         if (!Object.values(properties).includes(prop)) {
             if (Object.keys(properties).includes(prop)) {
