@@ -7,31 +7,32 @@
  */
 
 const fromEntries = require("lodash.frompairs");
-const {rawProperties, properties} = require("../data");
-const camelCase = require("camelcase");
+const {properties} = require("../data");
 
-exports.pwop = obj =>
-    fromEntries(
-        Object.entries(obj).map(([rawProp, rawValue]) => {
-            let prop = rawProp,
-                value = rawValue;
+exports.pwop = obj => {
+    const entries = [];
 
-            if (!properties.includes(rawProp)) {
-                if (rawProperties.includes(rawProp)) {
-                    prop = camelCase(rawProp);
-                }
+    Object.entries(obj).forEach(entry => {
+        let [prop, value] = entry;
+
+        // TODO: check for mixins
+
+        if (!Object.values(properties).includes(prop)) {
+            if (Object.keys(properties).includes(prop)) {
+                prop = properties[prop];
             }
+        }
 
-            if (Array.isArray(rawValue)) {
-                if (
-                    rawValue.reduce((b, val) => b || Array.isArray(val), false)
-                ) {
-                    value = rawValue.map(s => s.join(" ")).join(", ");
-                } else {
-                    value = rawValue.join(" ");
-                }
+        if (Array.isArray(value)) {
+            if (value.reduce((b, val) => b || Array.isArray(val), false)) {
+                value = value.map(s => s.join(" ")).join(", ");
+            } else {
+                value = value.join(" ");
             }
+        }
 
-            return [prop, value];
-        }),
-    );
+        entries.push([prop, value]);
+    });
+
+    return fromEntries(entries);
+};
