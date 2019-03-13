@@ -6,10 +6,12 @@
  * started at 11/03/2019
  */
 
-const units = require("./units");
+const functions = require("./functions");
 const pwop = require("./pwop");
+const units = require("./units");
 
 module.exports = {
-    ...units,
+    ...functions,
     ...pwop,
+    ...units,
 };
