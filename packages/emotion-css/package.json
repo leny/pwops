@@ -1,6 +1,6 @@
 {
   "name": "@pwops/emotion-css",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Emotion's css method, wrapped by pwops, agnostic CSS-in-JS facilitator",
   "keywords": [
     "css-in-js",
