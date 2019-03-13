@@ -1,6 +1,6 @@
 {
   "name": "@pwops/mixins",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Mixins for pwops, agnostic CSS-in-JS facilitator",
   "keywords": [
     "css-in-js",
@@ -48,7 +48,7 @@
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "@babel/register": "^7.0.0",
-    "@pwops/core": "^0.0.1",
+    "@pwops/core": "^0.0.2",
     "assert": "^1.4.1",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.0",

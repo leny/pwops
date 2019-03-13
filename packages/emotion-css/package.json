@@ -1,6 +1,6 @@
 {
   "name": "@pwops/emotion-css",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Emotion's css method, wrapped by pwops, agnostic CSS-in-JS facilitator",
   "keywords": [
     "css-in-js",
@@ -45,7 +45,7 @@
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "@babel/register": "^7.0.0",
-    "@pwops/core": "^0.0.1",
+    "@pwops/core": "^0.0.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.0",
     "eslint-plugin-prettier": "^3.0.1",
