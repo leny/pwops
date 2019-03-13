@@ -2,7 +2,7 @@
   "name": "pwops",
   "description": "CSS-in-JS, from JS - the easy way",
   "private": true,
-  "license":"MIT",
+  "license": "MIT",
   "homepage": "https://github.com/leny/pwops",
   "repository": {
     "type": "git",
