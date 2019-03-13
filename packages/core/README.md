@@ -1,4 +1,4 @@
-# pwops
+# @pwops/core
 
 > 🍃 CSS-in-JS, from JS - the easy way
 
