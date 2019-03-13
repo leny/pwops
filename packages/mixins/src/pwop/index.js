@@ -8,6 +8,7 @@
 
 const fromEntries = require("lodash.frompairs");
 const {properties} = require("../data");
+const {customMixins} = require("../mixins/custom");
 const mixins = require("../mixins");
 
 const pwop = obj => {
@@ -15,6 +16,18 @@ const pwop = obj => {
 
     Object.entries(obj).forEach(entry => {
         let [prop, value] = entry;
+
+        if (customMixins[prop]) {
+            entries.push(
+                ...Object.entries(
+                    customMixins[prop](
+                        // eslint-disable-next-line no-extra-parens
+                        ...(Array.isArray(value) ? value : [value]),
+                    ),
+                ),
+            );
+            return;
+        }
 
         if (mixins[prop]) {
             entries.push(
