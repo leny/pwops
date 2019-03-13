@@ -1,4 +1,4 @@
-/* leny/pwops
+/* leny/pwops/core
  *
  * /test/units.js - Test for units functions
  *

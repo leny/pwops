@@ -1,4 +1,4 @@
-/* leny/pwops
+/* leny/pwops/core
  *
  * /test/functions.js - Test for css functions
  *

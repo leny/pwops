@@ -1,4 +1,4 @@
-/* leny/pwops
+/* leny/pwops/core
  *
  * /scripts/extract-mdn-data.js - Extract MDN data as constants files
  *

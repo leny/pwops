@@ -1,6 +1,6 @@
 {
   "name": "@pwops/core",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Core package for pwops, agnostic CSS-in-JS facilitator",
   "keywords": [
     "css-in-js",
@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/leny/pwops/issues"
   },
-  "license":"MIT",
+  "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
     "prepare": "node scripts/extract-mdn-data.js",

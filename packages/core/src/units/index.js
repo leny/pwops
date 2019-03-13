@@ -1,4 +1,4 @@
-/* leny/pwops
+/* leny/pwops/core
  *
  * /src/units/index.js - Units functions
  *

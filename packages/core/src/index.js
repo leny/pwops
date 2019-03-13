@@ -1,4 +1,4 @@
-/* leny/pwops
+/* leny/pwops/core
  *
  * /src/index.js - Entry point
  *
@@ -9,7 +9,7 @@
 const functions = require("./functions");
 const pwop = require("./pwop");
 const units = require("./units");
-const {registerMixin} = require("./mixins/custom");
+const {registerMixin} = require("./mixins");
 
 module.exports = {
     ...functions,

@@ -1,4 +1,4 @@
-/* leny/pwops
+/* leny/pwops/core
  *
  * /.eslintrc.js - ESLint shared configuration
  *

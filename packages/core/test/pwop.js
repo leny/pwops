@@ -1,4 +1,4 @@
-/* leny/pwops
+/* leny/pwops/core
  *
  * /test/pwop.js - Test for pwop function
  *
@@ -67,28 +67,6 @@ const cases = {
                     "&:hover ~ p": {
                         opacity: 0.5,
                     },
-                },
-            },
-        ],
-        [
-            pwop({
-                absolute: [0, "auto", rem(3.6)],
-                "@media screen": {
-                    fixed: [rem(1), "auto"],
-                },
-            }),
-            {
-                position: "absolute",
-                top: 0,
-                right: "auto",
-                bottom: "3.6rem",
-                left: "auto",
-                "@media screen": {
-                    position: "fixed",
-                    top: "1rem",
-                    right: "auto",
-                    bottom: "1rem",
-                    left: "auto",
                 },
             },
         ],

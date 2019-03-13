@@ -1,4 +1,4 @@
-/* leny/pwops
+/* leny/pwops/core
  *
  * /src/mixins/index.js - Mixins functions
  *
@@ -6,12 +6,10 @@
  * started at 12/03/2019
  */
 
-const position = require("./position");
-const size = require("./size");
-const flex = require("./flex");
+const store = {};
 
-module.exports = {
-    ...position,
-    ...size,
-    ...flex,
+exports.registerMixin = (name, mixin) => {
+    store[name] = mixin;
 };
+
+exports.mixins = store;
