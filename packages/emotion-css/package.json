@@ -1,6 +1,6 @@
 {
   "name": "@pwops/emotion-css",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Emotion's css method, wrapped by pwops, agnostic CSS-in-JS facilitator",
   "keywords": [
     "css-in-js",
@@ -25,8 +25,8 @@
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
+    "prepublishOnly": "npx babel src --out-dir lib",
     "build": "npx babel src --out-dir lib",
-    "pretest": "npm run build",
     "lint": "npx eslint --fix --cache src"
   },
   "lint-staged": {
