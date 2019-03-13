@@ -61,5 +61,8 @@
   "dependencies": {
     "camelcase": "^5.2.0",
     "lodash.frompairs": "^4.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

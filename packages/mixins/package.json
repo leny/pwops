@@ -48,6 +48,7 @@
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "@babel/register": "^7.0.0",
+    "@pwops/core": "^0.0.0",
     "assert": "^1.4.1",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.0",
@@ -55,13 +56,15 @@
     "husky": "^1.3.1",
     "lint-staged": "^8.1.4",
     "mocha": "^6.0.2",
-    "@pwops/core": "^0.0.0",
     "prettier": "^1.10.2"
   },
   "dependencies": {
     "lodash.frompairs": "^4.0.1"
   },
-  "peerDependencies":{
+  "peerDependencies": {
     "@pwops/core": "^0.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
