@@ -1,6 +1,6 @@
-# pwops
+# @pwops/mixins
 
-> 🍃 CSS-in-JS, from JS - the easy way
+> 🍃 Mixins for pwops, agnostic CSS-in-JS facilitator
 
 * * *
 

@@ -1,6 +1,6 @@
 # @pwops/core
 
-> 🍃 CSS-in-JS, from JS - the easy way
+> 🍃 Core package for pwops, agnostic CSS-in-JS facilitator
 
 * * *
 

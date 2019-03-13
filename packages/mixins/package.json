@@ -1,14 +1,15 @@
 {
-  "name": "pwops",
+  "name": "@pwops/mixins",
   "version": "0.0.1",
-  "description": "CSS-in-JS, from JS - the easy way",
+  "description": "Mixins for pwops, agnostic CSS-in-JS facilitator",
   "keywords": [
     "css-in-js",
     "styled-components",
     "emotion",
     "glamor",
     "inline-styles",
-    "react"
+    "react",
+    "mixins"
   ],
   "author": {
     "name": "leny",
@@ -16,22 +17,14 @@
     "url": "https://leny.me"
   },
   "homepage": "https://github.com/leny/pwops",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/leny/pwops.git"
-  },
+  "repository": "https://github.com/leny/pwops/tree/master/packages/mixins",
   "files": [
     "lib"
   ],
   "bugs": {
-    "url": "https://github.com/leny/pwopw/issues"
+    "url": "https://github.com/leny/pwops/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/leny/pwops/blob/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
     "prepare": "node scripts/extract-mdn-data.js",
