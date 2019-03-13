@@ -1,6 +1,6 @@
-# pwops
+# @pwops/mixins
 
-> 🍃 Agnostic CSS-in-JS facilitator
+> 🍃 Mixins for pwops, agnostic CSS-in-JS facilitator
 
 * * *
 

@@ -1,6 +1,6 @@
-# pwops
+# @pwops/core
 
-> 🍃 Agnostic CSS-in-JS facilitator
+> 🍃 Core package for pwops, agnostic CSS-in-JS facilitator
 
 * * *
 
