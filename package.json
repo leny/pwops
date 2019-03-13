@@ -8,6 +8,10 @@
     "type": "git",
     "url": "git://github.com/leny/pwops.git"
   },
+  "scripts": {
+    "pretest": "npx lerna bootstrap",
+    "test": "npx lerna run test"
+  },
   "lint-staged": {
     "*.js": [
       "npx eslint --fix --cache",
