@@ -1,4 +1,4 @@
-/* leny/pwops
+/* leny/pwops/mixins
  *
  * /test/mixins.js - Test for mixins
  *
@@ -8,7 +8,9 @@
 
 const assert = require("assert");
 
-const {pwop, rem} = require("../lib");
+const {pwop, rem} = require("@pwops/core");
+
+require("../lib");
 
 const cases = {
     position: [

@@ -1,11 +1,12 @@
-/* leny/pwops
+/* leny/pwops/mixins
  *
- * /src/mixins/position/index.js - Position mixin functions
+ * /src/position/index.js - Position mixin functions
  *
  * coded by leny
  * started at 12/03/2019
  */
 
+const {registerMixin} = require("@pwops/core");
 const fromEntries = require("lodash.frompairs");
 
 const position = type => (...values) => {
@@ -61,8 +62,8 @@ const position = type => (...values) => {
     );
 };
 
-exports.static = position("static");
-exports.relative = position("relative");
-exports.absolute = position("absolute");
-exports.sticky = position("sticky");
-exports.fixed = position("fixed");
+registerMixin("static", position("static"));
+registerMixin("relative", position("relative"));
+registerMixin("absolute", position("absolute"));
+registerMixin("sticky", position("sticky"));
+registerMixin("fixed", position("fixed"));

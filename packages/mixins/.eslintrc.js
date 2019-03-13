@@ -1,4 +1,4 @@
-/* leny/pwops
+/* leny/pwops/mixins
  *
  * /.eslintrc.js - ESLint shared configuration
  *
