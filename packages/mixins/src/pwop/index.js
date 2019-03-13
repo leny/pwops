@@ -38,6 +38,9 @@ const pwop = obj => {
             } else {
                 value = value.join(" ");
             }
+        } else if (value === Object(value)) {
+            // check object type, cf. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Description
+            value = pwop(value);
         }
 
         entries.push([prop, value]);
