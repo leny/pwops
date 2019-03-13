@@ -25,8 +25,8 @@
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
+    "prepublishOnly": "npx babel src --out-dir lib",
     "build": "npx babel src --out-dir lib",
-    "pretest": "npm run build",
     "lint": "npx eslint --fix --cache src"
   },
   "lint-staged": {
