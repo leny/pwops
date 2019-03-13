@@ -91,7 +91,8 @@ describe("CSS functions", () => {
             });
 
             it(`Should throw if a wrong amount of arguments is passed to ${func}`, () => {
-                const args = Array(max).fill("foo", 0, max);
+                const treshold = maxArgs === Infinity ? min - 1 : max + 1;
+                const args = Array(treshold).fill("foo", 0, treshold);
 
                 assert.throws(() => method(...args), TypeError);
             });
