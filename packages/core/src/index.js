@@ -9,6 +9,7 @@
 const functions = require("./functions");
 const pwop = require("./pwop");
 const units = require("./units");
+const utils=require("./utils");
 const {registerMixin} = require("./mixins");
 
 module.exports = {
@@ -16,4 +17,5 @@ module.exports = {
     ...pwop,
     registerMixin,
     ...units,
+    ...utils,
 };
