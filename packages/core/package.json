@@ -24,10 +24,13 @@
     "url": "https://github.com/leny/pwops/issues"
   },
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
   "scripts": {
     "prepare": "node scripts/extract-mdn-data.js",
-    "build": "npx babel src --out-dir lib",
+    "build:cjs": "npx babel src --env-name cjs --out-dir lib/cjs",
+    "build:esm": "npx babel src --env-name esm --out-dir lib/esm",
+    "build": "npm run build:cjs && npm run build:esm",
     "pretest": "npm run prepare && npm run build",
     "test": "npx mocha --require @babel/register",
     "lint": "npx eslint --fix --cache src"
