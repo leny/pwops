@@ -1,15 +1,13 @@
 {
   "env": {
     "cjs": {
-      "presets": [["@babel/preset-env", {"useBuiltIns": "usage", "corejs":"3","modules": "cjs"}]]
+      "presets": [["@babel/preset-env", {"modules": "cjs"}]]
     },
     "esm": {
       "presets": [
         [
           "@babel/preset-env",
           {
-            "modules": false,
-            "useBuiltIns": "usage", "corejs":"3",
             "targets": {
               "esmodules": true
             }
