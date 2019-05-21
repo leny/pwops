@@ -63,9 +63,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.4",
-    "@emotion/css": "^10.0.9",
-    "core-js": "^3.1.2"
+    "@emotion/css": "^10.0.9"
   },
   "gitHead": "f31f343b9740e15df457904b454dd29b97d52e7a"
 }

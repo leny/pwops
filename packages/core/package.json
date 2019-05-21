@@ -62,9 +62,7 @@
     "prettier": "^1.10.2"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.4",
     "camelcase": "^5.3.1",
-    "core-js": "^3.1.2",
     "lodash.frompairs": "^4.0.1"
   },
   "publishConfig": {

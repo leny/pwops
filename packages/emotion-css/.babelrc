@@ -5,8 +5,6 @@
                 [
                     "@babel/preset-env",
                     {
-                        "useBuiltIns": "usage",
-                        "corejs": "3",
                         "modules": "cjs"
                     }
                 ]
@@ -18,8 +16,6 @@
                     "@babel/preset-env",
                     {
                         "modules": false,
-                        "useBuiltIns": "usage",
-                        "corejs": "3",
                         "targets": {
                             "esmodules": true
                         }
