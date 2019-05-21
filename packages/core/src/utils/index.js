@@ -6,7 +6,7 @@
  * started at 14/03/2019
  */
 
-import fromEntries from "lodash.frompairs";
+const fromEntries = require("lodash.frompairs");
 
 const _important=(target)=>{
     if (Array.isArray(target)){
