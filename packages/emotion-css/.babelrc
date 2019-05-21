@@ -1,32 +1,43 @@
 {
-  "env": {
-    "cjs": {
-      "presets": [["@babel/preset-env", {"modules": "cjs"}]]
-    },
-    "esm": {
-      "presets": [
-        [
-          "@babel/preset-env",
-          {
-            "modules": false,
-            "targets": {
-              "esmodules": true
-            }
-          }
-        ]
-      ]
-    }
-  },
-  "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "targets": {
-          "node": "current"
+    "env": {
+        "cjs": {
+            "presets": [
+                [
+                    "@babel/preset-env",
+                    {
+                        "useBuiltIns": "usage",
+                        "corejs": "3",
+                        "modules": "cjs"
+                    }
+                ]
+            ]
+        },
+        "esm": {
+            "presets": [
+                [
+                    "@babel/preset-env",
+                    {
+                        "modules": false,
+                        "useBuiltIns": "usage",
+                        "corejs": "3",
+                        "targets": {
+                            "esmodules": true
+                        }
+                    }
+                ]
+            ]
         }
-      }
-    ]
-  ],
-  "compact": true,
-  "comments": false,
+    },
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ]
+    ],
+    "compact": true,
+    "comments": false
 }
