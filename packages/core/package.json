@@ -56,7 +56,7 @@
     "eslint": "^6.0.0",
     "eslint-plugin-prettier": "^3.0.1",
     "husky": "^3.0.0",
-    "lint-staged": "^9.0.0",
+    "lint-staged": "^10.1.0",
     "mdn-data": "^2.0.2",
     "mocha": "^6.0.2",
     "prettier": "^1.10.2"
