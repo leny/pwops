@@ -1,5 +1,5 @@
 {
-  "name": "react-hooks",
+  "name": "@pwops/react-hooks",
   "version": "0.1.5",
   "description": "React hooks for pwops, agnostic CSS-in-JS facilitator",
   "keywords": [
