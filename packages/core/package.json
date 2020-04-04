@@ -1,6 +1,6 @@
 {
   "name": "@pwops/core",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Core package for pwops, agnostic CSS-in-JS facilitator",
   "keywords": [
     "css-in-js",
