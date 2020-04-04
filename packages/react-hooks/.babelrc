@@ -1,0 +1,31 @@
+{
+  "env": {
+    "cjs": {
+      "presets": [["@babel/preset-env", {"modules": "cjs"}]]
+    },
+    "esm": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "esmodules": true
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "compact": true,
+  "comments": false,
+}

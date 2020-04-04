@@ -1,0 +1,69 @@
+{
+  "name": "react-hooks",
+  "version": "0.1.5",
+  "description": "React hooks for pwops, agnostic CSS-in-JS facilitator",
+  "keywords": [
+    "css-in-js",
+    "emotion",
+    "inline-styles",
+    "wrapper",
+    "react",
+    "hooks"
+  ],
+  "author": "leny <info@flatland.be>",
+  "homepage": "https://github.com/leny/pwops/tree/master/packages/react-hooks#readme",
+  "license": "MIT",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leny/pwops.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leny/pwops/issues"
+  },
+  "scripts": {
+    "prepublishOnly": "npx babel src --out-dir lib",
+    "build:cjs": "npx babel src --env-name cjs --out-dir lib/cjs",
+    "build:esm": "npx babel src --env-name esm --out-dir lib/esm",
+    "build": "npm run build:cjs && npm run build:esm",
+    "lint": "npx eslint --fix --cache src"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npx eslint --fix --cache"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "@pwops/core": "^0.1.5",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1",
+    "prettier": "^2.0.2"
+  },
+  "peerDependencies": {
+    "@emotion/css": "^10.0.9",
+    "@pwops/core": "^0.1.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@pwops/emotion-css": "^0.1.5",
+    "react": "^16.13.1"
+  }
+}
