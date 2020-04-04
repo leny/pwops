@@ -10,7 +10,7 @@ const assert = require("assert");
 
 const {pwop, rem} = require("@pwops/core");
 
-require("../lib");
+require("../lib/cjs");
 
 const cases = {
     position: [

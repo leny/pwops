@@ -8,7 +8,7 @@
 
 const assert = require("assert");
 
-const {pwop, rem, percent, s} = require("../lib");
+const {pwop, rem, percent, s} = require("../lib/cjs");
 
 const cases = {
     "basic usage": [

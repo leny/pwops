@@ -8,7 +8,7 @@
 
 const assert = require("assert");
 
-const cssFunctions = require("../lib");
+const cssFunctions = require("../lib/cjs");
 
 describe("CSS functions", () => {
     Object.entries({

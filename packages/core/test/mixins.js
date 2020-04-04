@@ -18,7 +18,7 @@ const customClearfixMixin = () => ({
     },
 });
 
-const {pwop, registerMixin} = require("../lib");
+const {pwop, registerMixin} = require("../lib/cjs");
 
 describe("Custom Mixins", () => {
     registerMixin("clearfix", customClearfixMixin);

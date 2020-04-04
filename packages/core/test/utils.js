@@ -18,7 +18,7 @@ const customClearfixMixin = () => ({
     },
 });
 
-const {pwop, important, translateX, rem} = require("../lib");
+const {pwop, important, translateX, rem} = require("../lib/cjs");
 
 describe("important()", () => {
     it("Adds !important for simple/primitive values", () => {

@@ -9,7 +9,7 @@
 const assert = require("assert");
 const {units} = require("../src/data");
 
-const unitsMethods = require("../lib");
+const unitsMethods = require("../lib/cjs");
 
 describe("Units functions", () => {
     units.forEach(name => {
