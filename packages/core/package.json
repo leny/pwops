@@ -61,7 +61,7 @@
     "prettier": "^2.0.2"
   },
   "dependencies": {
-    "camelcase": "^5.3.1",
+    "camelcase": "^6.0.0",
     "lodash.frompairs": "^4.0.1"
   },
   "publishConfig": {
